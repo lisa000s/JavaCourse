@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="car_dealership/src"/>
+	<classpathentry kind="src" path="java_basics/src"/>
+	<classpathentry kind="src" path="JavaCourse/car_dealership/src"/>
+	<classpathentry kind="src" path="JavaCourse/java_basics/src"/>
+	<classpathentry kind="src" path="JavaCourse/Prereq_OOP/src"/>
+	<classpathentry kind="src" path="Prereq_OOP/src"/>
+	<classpathentry kind="output" path="Prereq_OOP/bin"/>
+</classpath>
