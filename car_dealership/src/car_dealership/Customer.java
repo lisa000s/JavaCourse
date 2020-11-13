@@ -5,7 +5,8 @@ public class Customer {
 	private String address;
 	private double cashOnHand;
 public void purchaseCar(Vehicle vehicle, Employee emp, boolean finance ) {
-	
+	if (vehicle.price <= finance) 
+		System.out.println("");
 }
 public String getName() {
 	return name;
