@@ -4,6 +4,10 @@ public class Customer {
 	private String name;
 	private String address;
 	private double cashOnHand;
+	
+	public void goesToDealership () {
+		System.out.println(name + " came to the dealdership to buy a car");
+	}
 public void purchaseCar(Vehicle vehicle, Employee emp, boolean finance ) {
 	
 }
@@ -23,6 +27,7 @@ public double getCashOnHand() {
 	return cashOnHand;
 }
 public void setCashOnHand(double cashOnHand) {
+	cashOnHand = cashOnHand +500;
 	this.cashOnHand = cashOnHand;
 }
 }

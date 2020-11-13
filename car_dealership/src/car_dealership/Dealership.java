@@ -7,8 +7,15 @@ public class Dealership {
 		cust1.setName("Tom");
 		cust1.setAddress("123 Apple St");
 		cust1.setCashOnHand(2000);
-		cust1.purchaseCar(vehicle, emp, finance);
-
+		cust1.goesToDealership();
+		//cust1.purchaseCar(vehicle, emp, true);
+		Employee emp = new Employee();
+		emp.introduceThemselves();
+		
+		
+		
+		
+		
 	}
 
 }
