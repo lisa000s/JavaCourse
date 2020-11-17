@@ -28,6 +28,6 @@ public double getCashOnHand() {
 }
 public void setCashOnHand(double cashOnHand) {
 	cashOnHand = cashOnHand +500;
-	this.cashOnHand = cashOnHand;
+	this.cashOnHand = cashOnHand;   
 }
 }
