@@ -9,6 +9,7 @@ public class Customer {
 		System.out.println(name + " came to the dealdership to buy a car");
 	}
 public void purchaseCar(Vehicle vehicle, Employee emp, boolean finance ) {
+	emp.handleCustomer(vehicle, this, finance);
 	
 }
 public String getName() {

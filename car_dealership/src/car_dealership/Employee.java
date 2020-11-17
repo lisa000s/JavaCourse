@@ -11,17 +11,21 @@ public void sellCar(Vehicle vehicle) {
 public void introduceThemselves() {
 	System.out.println("Hello, my name is " + name + "I am your " + title);
 }
-public void runCreditHistoryCheck (Customer cust, double doubleAmount) {
+public void runCreditHistoryCheck (Customer cust1, double loanAmount) {
 	System.out.println("Credit Check Passed");
 }
 public void processTransaction() {
-	System.out.println("Transaction processed");
+	System.out.println("Transaction processed in cash");
 }
 
-public void handleCustomer(Customer cust, boolean finance, Vehicle vehicle, double doubleAmount) {
-	if ((finance == true) && (vehicle.getPrice() <= cust.getCashOnHand())) {
-		runCreditHistoryCheck(cust, doubleAmount);
+public void handleCustomer(Vehicle vehicle, Customer cust1, boolean finance) {   //finance true - means customer wants to finance a car
+	if (finance == true) {
+		double loanAmount = vehicle.getPrice() - cust1.getCashOnHand();
+		runCreditHistoryCheck (cust1, loanAmount);
+	}
+	else if (vehicle.getPrice() <= cust1.getCashOnHand()) { 		
 		processTransaction();
+		System.out.println("Customer purchased car " + vehicle);
 	}
 	else {
 		System.out.println("Customer needs to bring more money");
